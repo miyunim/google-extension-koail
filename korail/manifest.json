@@ -1,0 +1,14 @@
+{
+  "name": "korail",
+  "description": "Lowest Price Search(using about.co.kr)",
+  "version": "0.1",
+  "permissions": ["http://www.korail.com/"],
+  "content_scripts":[
+    {
+      "run_at":"document_end",
+      "matches":["http://*/*"],
+      "js":["jquery-1.7.2.min.js", "lps.js"]
+    }
+  ],
+  "manifest_version": 2
+}
